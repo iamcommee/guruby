@@ -1,0 +1,21 @@
+{
+  "name": "guruby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "commee",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/interactive-messages": "^1.1.1",
+    "@slack/web-api": "^5.0.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "moment": "^2.24.0",
+    "lodash": "^4.17.15"
+  }
+}
