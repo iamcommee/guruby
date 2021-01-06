@@ -88,7 +88,6 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `${image_url}`,
-                            "alt_text": "palm tree"
                         }
                     }
                 ]
@@ -157,7 +156,7 @@ async function slackSlashCommand(req, res, next) {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/cc0033/ffffff.png&text=${deaths}`,
                         }
-                    },
+                    }
                 ]
             }
             ]
@@ -225,7 +224,7 @@ async function slackSlashCommand(req, res, next) {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/cc0033/ffffff.png&text=${newDeaths}`,
                         }
-                    },
+                    }
                 ]
             }
             ]
