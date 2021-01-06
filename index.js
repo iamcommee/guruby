@@ -88,6 +88,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `${image_url}`,
+                            "alt_text": "AQI"
                         }
                     }
                 ]
@@ -122,6 +123,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/7c3600/ffffff.png&text=${confirmed}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -133,6 +135,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/009966/ffffff.png&text=${recovered}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -144,6 +147,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/ff9933/ffffff.png&text=${hospitalized}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -155,6 +159,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/cc0033/ffffff.png&text=${deaths}`,
+                            "alt_text": "COVID-19"
                         }
                     }
                 ]
@@ -190,6 +195,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/7c3600/ffffff.png&text=${newConfirmed}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -201,6 +207,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/009966/ffffff.png&text=${newRecovered}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -212,6 +219,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/ff9933/ffffff.png&text=${newHospitalized}`,
+                            "alt_text": "COVID-19"
                         }
                     },
                     {
@@ -223,6 +231,7 @@ async function slackSlashCommand(req, res, next) {
                         "accessory": {
                             "type": "image",
                             "image_url": `https://dummyimage.com/150x150/cc0033/ffffff.png&text=${newDeaths}`,
+                            "alt_text": "COVID-19"
                         }
                     }
                 ]
@@ -235,7 +244,7 @@ async function slackSlashCommand(req, res, next) {
     }
     else {
 
-        res.send('Please use /aql to show air quality')
+        res.send('Please use / to show command list')
 
     }
 }
