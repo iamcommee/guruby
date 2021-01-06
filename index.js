@@ -30,7 +30,7 @@ if (!slackSigningSecret || !slackAccessToken) {
 app.use('/slack/actions', slackInteractions.expressMiddleware())
 app.post('/slack/commands', bodyParser.urlencoded({ extended: false }), slackSlashCommand)
 app.get('/',(req,res) => {
-    return res.send({message: 'Hi, this is air quality slack app.'})
+    return res.send({message: 'Hi, this is Guruby'})
 })
 
 http.createServer(app).listen(port, () => {
