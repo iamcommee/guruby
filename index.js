@@ -74,7 +74,7 @@ async function slackSlashCommand(req, res, next) {
         }
 
         let aqiBlock = {
-            "response_type": "in_channel",
+            "response_type": "ephemeral",
             "text": `Chiang Mai AQI : ${response.data.data.aqi} From ${response.data.data.city.name} Updated on ${moment(response.data.data.time.s).format("DD/MM/YYYY, H:mm")}`,
             "attachments": [
                {
@@ -109,7 +109,7 @@ async function slackSlashCommand(req, res, next) {
         let updateDate = response.data.UpdateDate
         
         let covidBlock = {
-            "response_type": "in_channel",
+            "response_type": "ephemeral",
             "text": `Thailand COVID-19 : Ref https://covid19.th-stat.com/api/open/today Updated on ${updateDate}`,
             "attachments": [
                {
@@ -181,7 +181,7 @@ async function slackSlashCommand(req, res, next) {
         let updateDate = response.data.UpdateDate
         
         let covidBlock = {
-            "response_type": "in_channel",
+            "response_type": "ephemeral",
             "text": `Thailand COVID-19 : Ref https://covid19.th-stat.com/api/open/today Updated on ${updateDate}`,
             "attachments": [
                {
