@@ -102,11 +102,11 @@ async function slackSlashCommand(req, res, next) {
 
         let response = await axios.get(`https://covid19.th-stat.com/api/open/today`)
 
-        let confirmed = response.Confirmed
-        let recovered = response.Recovered
-        let hospitalized = response.Hospitalized
-        let deaths = response.Deaths
-        let updateDate = response.UpdateDate
+        let confirmed = response.data.Confirmed
+        let recovered = response.data.Recovered
+        let hospitalized = response.data.Hospitalized
+        let deaths = response.data.Deaths
+        let updateDate = response.data.UpdateDate
         
         let covidBlock = {
             "response_type": "in_channel",
@@ -174,11 +174,11 @@ async function slackSlashCommand(req, res, next) {
 
         let response = await axios.get(`https://covid19.th-stat.com/api/open/today`)
 
-        let newConfirmed = response.NewConfirmed
-        let newRecovered = response.NewRecovered
-        let newHospitalized = response.NewHospitalized
-        let newDeaths = response.NewDeaths
-        let updateDate = response.UpdateDate
+        let newConfirmed = response.data.NewConfirmed
+        let newRecovered = response.data.NewRecovered
+        let newHospitalized = response.data.NewHospitalized
+        let newDeaths = response.data.NewDeaths
+        let updateDate = response.data.UpdateDate
         
         let covidBlock = {
             "response_type": "in_channel",
